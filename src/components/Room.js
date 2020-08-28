@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 function Room({ room }) {
 
-    const { name, roomDetails, images, price } = room;
+    const { name, slug, images, price } = room;
 
 
     return (
@@ -17,7 +17,7 @@ function Room({ room }) {
                     <h6>${price}</h6>
                     <p>Per Night</p>
                 </div>
-                <Link to={`/rooms/${roomDetails}`} className='btn-primary room-link'>
+                <Link to={`/rooms/${slug}`} className='btn-primary room-link'>
                     Features
             </Link>
             </div>
