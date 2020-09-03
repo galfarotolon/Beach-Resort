@@ -13,7 +13,7 @@ class RoomProvider extends Component {
     };
 
 
-    // getData{}
+    // get data
 
 
     componentDidMount() {
