@@ -11,7 +11,7 @@ export default class RoomDetails extends Component {
         super(props);
         console.log(this.props);
         this.state = {
-            roomDetails: this.props.match.params.roomDetails,
+            slug: this.props.match.params.slug,
             defaultBcg: defaultBcg
         };
     }
