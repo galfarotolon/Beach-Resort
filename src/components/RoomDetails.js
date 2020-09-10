@@ -15,7 +15,7 @@ export default class RoomDetails extends Component {
             defaultBcg: defaultBcg
         };
     }
-    //compontent mount
+    //compontent 
     componentDidMount() {
 
     }
