@@ -12,7 +12,7 @@ export default class Navbar extends Component {
     handleToggle = () => {
         this.setState({ isOpen: !this.state.isOpen })
     }
-
+    //render the nav bar
     render() {
         return (
             <nav className='navbar'>
