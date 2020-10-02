@@ -8,6 +8,7 @@ export default class FeaturedRooms extends Component {
 
     static contextType = RoomContext
 
+    //render the featured rooms
     render() {
 
         let { loading, featuredRooms: rooms } = this.context
