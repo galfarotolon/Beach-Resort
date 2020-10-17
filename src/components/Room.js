@@ -28,6 +28,7 @@ function Room({ room }) {
 
 export default Room
 
+//add proptypes requirements
 Room.propTypes = {
     room: PropTypes.shape({
         name: PropTypes.string.isRequired,
