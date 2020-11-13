@@ -10,7 +10,7 @@ function Room({ room }) {
 
     return (
         <article className='room'>
-            <div class="img-container">
+            <div className="img-container">
                 <img src={images[0] || defaultImg} alt="featured room" />
 
                 <div className='price-top'>
@@ -32,7 +32,7 @@ export default Room
 Room.propTypes = {
     room: PropTypes.shape({
         name: PropTypes.string.isRequired,
-        roomDetails: PropTypes.string.isRequired,
+        // roomDetails: PropTypes.string.isRequired,
         images: PropTypes.arrayOf(PropTypes.string).isRequired,
         price: PropTypes.number.isRequired,
     })
