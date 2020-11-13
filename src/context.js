@@ -75,7 +75,7 @@ class RoomProvider extends Component {
     }
 
     filterRooms = () => {
-        let { rooms, type, capacity, price, minSize, maxSize, minPrice, maxPrice, breakfast, pets } = this.state
+        let { rooms, type, capacity, price, minSize, maxSize, breakfast, pets } = this.state
 
         // all the rooms
         let tempRooms = [...rooms];
