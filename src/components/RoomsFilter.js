@@ -8,7 +8,7 @@ const getUnique = (items, value) => {
 }
 
 
-//filter rooms
+
 function RoomsFilter({ rooms }) {
     const context = useContext(RoomContext)
 
