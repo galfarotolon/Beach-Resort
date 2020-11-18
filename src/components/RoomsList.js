@@ -3,6 +3,7 @@ import Room from './Room'
 
 function RoomsList({ rooms }) {
 
+    //check if rooms is 0 to return an unsuccessful search message
     if (rooms.length === 0) {
         return (
             <div className='empty-search'>
