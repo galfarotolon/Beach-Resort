@@ -5,6 +5,9 @@ import RoomsContainer from '../components/RoomsContainer'
 import { Link } from 'react-router-dom'
 
 function Rooms() {
+
+
+
     return (
         <>
             <Hero hero='roomsHero'>

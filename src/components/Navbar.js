@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../images/logo.png'
 import { FaAlignRight, FaToggleOff } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
+import Services from '../components/Services'
 
 const Navbar = () => {
 
@@ -55,6 +56,7 @@ const Navbar = () => {
                     <li>
                         <Link to='/rooms'>Rooms</Link>
                     </li>
+
                 </ul>
             </div>
         </nav>
