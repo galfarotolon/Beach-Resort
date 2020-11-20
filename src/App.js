@@ -9,8 +9,8 @@ import Home from './components/Home'
 import Rooms from './components/Rooms'
 import RoomDetails from './components/RoomDetails'
 import Error from './components/Error'
-
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Route exact path='/rooms/:slug' component={RoomDetails} />
         <Route component={Error} />
       </Switch>
+      <Footer />
 
     </div >
   );

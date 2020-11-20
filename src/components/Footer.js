@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../images/logo.png'
-import { FaAlignRight, FaToggleOff } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import logo from '../images/logo.png'
+import { FaAlignRight } from 'react-icons/fa'
 
-
-const Navbar = () => {
-
+const Footer = () => {
 
     const [show, handleShow] = useState(false);
 
@@ -35,21 +33,21 @@ const Navbar = () => {
 
 
 
-    return (
-        <nav className={`navbar ${show && 'navBlack'}`}>
 
-            <div className='nav-center'>
-                <div className="nav-header">
+    return (
+        <div >
+
+            <div className='footer'>
+                <div >
                     <Link to='/'>
                         <img src={logo} alt="Beach Resort" />
                     </Link>
-                    <button type='button' className='nav-btn' onClick={handleToggle}>
 
-                        <FaAlignRight className='nav-icon' />
-
-                    </button>
                 </div>
-                <ul className={isOpen ? "nav-links show-nav" : 'nav-links'}>
+                <div className='copyright'>
+                    <p>Copyright Beach Resort 2020</p>
+                </div>
+                <ul className=' footer-links'>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
@@ -59,8 +57,11 @@ const Navbar = () => {
 
                 </ul>
             </div>
-        </nav>
+        </div>
+
+
     )
 }
 
-export default Navbar
+
+export default Footer
