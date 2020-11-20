@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #34917c;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -17,12 +18,15 @@
 }
 /* globals */
 body {
-  padding-top: 66px;
+
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Cinzel', cursive, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
+  font-weight: 800;
+
 }
+
 h1 {
   font-size: 3em;
   line-height: 1;
@@ -73,6 +77,7 @@ h6 {
   text-transform: capitalize;
   text-align: center;
   margin-top: 3rem;
+  /* color: var(--primaryColor) */
 }
 .error {
   text-align: center;
@@ -93,10 +98,25 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
-  background: var(--offWhite);
+  padding: 0.75rem 0.5rem;
+  background: transparent;
   z-index: 1;
+  height: 200px;
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #000000, transparent);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #000000, transparent); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+transition-timing-function: ease-in;
+transition: all 0.5s;
+ 
 }
+.navBlack{
+
+  background-color: #111;
+  height: 100px;
+
+}
+
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -121,7 +141,7 @@ h6 {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
@@ -143,6 +163,8 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .nav-links {
     height: auto;
@@ -158,27 +180,29 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  min-height: calc(100vh);
+  background: url("./images/defaultBcg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
-  min-height: 60vh;
+  background-image: url("./images/room-4.jpg");
+  min-height: 70vh;
 }
 /* End of Hero */
 /* Banner */
 .banner {
   display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   color: var(--mainWhite);
   padding: 2rem 1rem;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+  
 }
+
 .banner h1 {
   font-size: 2.5rem;
 }
@@ -231,6 +255,8 @@ h6 {
 /* services */
 .services {
   padding: 5rem 0;
+  height: 85vh;
+
 }
 .services {
   background: var(--darkGrey);
@@ -275,6 +301,7 @@ h6 {
 
 .featured-rooms {
   padding: 5rem 0;
+  height: 85vh;
 }
 .featured-rooms-center {
   width: 80vw;
@@ -308,6 +335,8 @@ h6 {
 
 .img-container {
   position: relative;
+
+
 }
 .img-container img {
   width: 100%;
@@ -400,9 +429,9 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 
-.info h6 {
+/* .info h6 {
   font-weight: 300;
-}
+} */
 .room-extras {
   width: 80vw;
   margin: 0 auto 3rem auto;

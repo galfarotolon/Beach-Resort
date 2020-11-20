@@ -12,7 +12,7 @@ function Home() {
 
             <Hero >
 
-                <Banner title='luxurious rooms'
+                <Banner title='Luxury Awaits'
                     subtitle='deluxe rooms starting at $299'>
                     <Link to='/rooms' className='btn-primary'>
                         Our Rooms
