@@ -37,18 +37,17 @@ const Footer = () => {
     return (
         <div >
 
-            <div >
+            <div className='footer'>
                 <div >
                     <Link to='/'>
                         <img src={logo} alt="Beach Resort" />
                     </Link>
-                    <button type='button' className='nav-btn' onClick={handleToggle}>
 
-                        <FaAlignRight className='nav-icon' />
-
-                    </button>
                 </div>
-                <ul className={isOpen ? "nav-links show-nav" : 'nav-links'}>
+                <div className='copyright'>
+                    <p>Copyright Beach Resort 2020</p>
+                </div>
+                <ul className=' footer-links'>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
