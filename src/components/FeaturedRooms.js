@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { RoomContext } from '../context'
+import { Link } from 'react-router-dom'
 import Loading from './Loading'
 import Room from './Room'
 import Title from './Title'
+
 
 export default class FeaturedRooms extends Component {
 
@@ -23,6 +25,9 @@ export default class FeaturedRooms extends Component {
                 <div class="featured-rooms-center">
                     {loading ? <Loading /> : rooms}
                 </div>
+                <Link to='/rooms' className='btn-primary center'>
+                    View All Rooms
+                    </Link>
             </section>
         )
     }

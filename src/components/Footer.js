@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../images/logo.png'
-import { FaAlignRight, FaToggleOff } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import logo from '../images/logo.png'
+import { FaAlignRight } from 'react-icons/fa'
 
-
-const Navbar = () => {
-
+const Footer = () => {
 
     const [show, handleShow] = useState(false);
 
@@ -35,11 +33,12 @@ const Navbar = () => {
 
 
 
-    return (
-        <nav className={`navbar ${show && 'navBlack'}`}>
 
-            <div className='nav-center'>
-                <div className="nav-header">
+    return (
+        <div >
+
+            <div >
+                <div >
                     <Link to='/'>
                         <img src={logo} alt="Beach Resort" />
                     </Link>
@@ -59,8 +58,11 @@ const Navbar = () => {
 
                 </ul>
             </div>
-        </nav>
+        </div>
+
+
     )
 }
 
-export default Navbar
+
+export default Footer
