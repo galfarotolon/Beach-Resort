@@ -187,7 +187,7 @@ transition: all 0.5s;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url("./images/room-4.jpg");
   min-height: 70vh;
 }
 /* End of Hero */
@@ -335,6 +335,8 @@ transition: all 0.5s;
 
 .img-container {
   position: relative;
+
+
 }
 .img-container img {
   width: 100%;
