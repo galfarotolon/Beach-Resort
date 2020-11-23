@@ -10,7 +10,7 @@ export default class RoomDetails extends Component {
 
     constructor(props) {
         super(props);
-        //console.log(this.props);
+
         this.state = {
             slug: this.props.match.params.slug,
             defaultBcg: defaultBcg
