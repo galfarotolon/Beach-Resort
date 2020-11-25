@@ -19,7 +19,7 @@ export default class RoomDetails extends Component {
 
     static contextType = RoomContext;
 
-    //compontent did mount
+
     componentDidMount() {
 
     }
