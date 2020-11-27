@@ -14,7 +14,7 @@ const Footer = () => {
     }
 
 
-
+    //check for navbar
     useEffect(() => {
 
         window.addEventListener('scroll', () => {
