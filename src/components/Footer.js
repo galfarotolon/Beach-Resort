@@ -13,7 +13,6 @@ const Footer = () => {
         setIsOpen(!isOpen)
     }
 
-    //handle
 
     useEffect(() => {
 
