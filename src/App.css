@@ -4,6 +4,23 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
+@keyframes transitionInSideBar{
+  from {
+      opacity: 0;
+      transform: translate(100%);
+  }
+
+  to {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+
+
+
 :root {
   --primaryColor: #34917c;
   --mainWhite: #fff;
@@ -122,6 +139,7 @@ transition: all 0.5s;
 .nav-header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .nav-btn {
   background: transparent;
@@ -136,10 +154,20 @@ transition: all 0.5s;
 .nav-links {
   height: 0;
   overflow: hidden;
-  transition: var(--mainTransition);
+
   list-style-type: none;
 
 }
+
+ul.nav-links{
+  align-items: center;
+}
+
+.animate{
+  animation: transitionInSideBar 1s;
+}
+
+
 .nav-links a {
   display: block;
   text-decoration: none;
@@ -155,10 +183,27 @@ transition: all 0.5s;
   color: var(--primaryColor);
 }
 
-.show-nav {
 
-  height: 100px;
+.show-nav{
+  display: flex;
+  justify-content: right; 
 }
+
+
+ul.nav-links.show-nav.animate{
+  align-items: center;
+  justify-content: space-around;
+  height: 78px;
+ 
+}
+
+
+.nav-links a{
+  margin-left: 1rem;
+}
+
+
+
 @media screen and (min-width: 768px) {
   .nav-btn {
     display: none;
@@ -175,10 +220,15 @@ transition: all 0.5s;
     display: flex;
     margin-left: 4rem;
   }
-  .nav-links a {
+ .nav-links a {
     margin: 0 1rem;
     padding: 0.5rem 0;
   }
+
+  
+
+
+ 
 }
 /* end of navbar */
 /* Hero */
@@ -600,12 +650,18 @@ transition: all 0.5s;
 }
 
 
+
+
 .copyright{
   display: flex;
   align-items: center;
   font-size: 0.8rem;
   margin-right: 10%;
+
+  
 }
+
+
 
 .footer-links li a{
 
@@ -635,4 +691,41 @@ transition: all 0.5s;
   color: var(--primaryColor);
 }
 
+
+@media screen and (max-width: 776px) {
+
+  .footer{
+    justify-content: space-between;
+  }
+
+  .copyright {
+    width: 30%;
+    text-align: center;
+    
+  }
+
+  .footer a{
+    width: 30%;
+  }
+
+  .footer-links{
+    margin-right: 3%;
+
+  }
+
+  .footer-links li{
+    height: 30px;
+   
+  }
+
+
+  .footer-links li a {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 0.2rem;
+   
+   
+ 
+  }
+}
 
