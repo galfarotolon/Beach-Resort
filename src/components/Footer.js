@@ -9,10 +9,11 @@ const Footer = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleToggle = () => {
-        setIsOpen(!isOpen)
-    }
+    // const handleToggle = () => {
+    //     setIsOpen(!isOpen)
+    // }
 
+    //handletoggle not used, only in navbar 
 
     useEffect(() => {
 
