@@ -38,12 +38,9 @@ const Footer = () => {
         <div >
 
             <div className='footer'>
-                <div >
-                    <Link to='/'>
-                        <img src={logo} alt="Beach Resort" />
-                    </Link>
-
-                </div>
+                <Link to='/'>
+                    <img src={logo} alt="Beach Resort" style={{ width: '100%' }} />
+                </Link>
                 <div className='copyright'>
                     <p>Copyright Beach Resort 2020</p>
                 </div>

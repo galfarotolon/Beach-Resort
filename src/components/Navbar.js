@@ -43,21 +43,25 @@ const Navbar = () => {
                     <Link to='/'>
                         <img src={logo} alt="Beach Resort" />
                     </Link>
+
+                    <ul className={isOpen ? "nav-links show-nav animate" : 'nav-links'}>
+                        <li>
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li>
+                            <Link to='/rooms'>Rooms</Link>
+                        </li>
+
+                    </ul>
                     <button type='button' className='nav-btn' onClick={handleToggle}>
 
                         <FaAlignRight className='nav-icon' />
 
                     </button>
-                </div>
-                <ul className={isOpen ? "nav-links show-nav" : 'nav-links'}>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/rooms'>Rooms</Link>
-                    </li>
 
-                </ul>
+
+                </div>
+
             </div>
         </nav>
     )
